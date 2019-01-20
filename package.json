@@ -1,0 +1,21 @@
+{
+  "name": "randomuser-poc-api",
+  "version": "1.0.0",
+  "description": "NodeJS POC using an external API and asynchronous calls",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node_modules/.bin/nodemon -e js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9"
+  }
+}

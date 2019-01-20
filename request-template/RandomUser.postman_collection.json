@@ -1,0 +1,64 @@
+{
+	"variables": [],
+	"info": {
+		"name": "RandomUser",
+		"_postman_id": "1ea285ea-d607-eff7-b5a7-ebad4cc125bb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://randomuser.me/api",
+			"request": {
+				"url": "https://randomuser.me/api",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/firstname/valtteri",
+			"request": {
+				"url": "http://localhost:3000/users/firstname/valtteri",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/",
+			"request": {
+				"url": "http://localhost:3000/users/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gender\": \"male\",\n    \"firstname\": \"TEST FIRST NAME\",\n    \"city\": \"TEST CITY\",\n    \"email\": \"test.test@example.com\",\n    \"cell\": \"(420)-255-3320\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

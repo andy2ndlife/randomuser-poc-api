@@ -11,13 +11,15 @@ The API is configured to run on localhost:3000
 1. GET http://localhost:3000/users
 2. GET http://localhost:3000/users/firstname/{{firstName}}
 3. POST http://localhost:3000/users/
-    JSON request-body
-    ```{
+
+    *JSON request-body*
+    ```
+    {
         "gender": "male",
         "firstname": "TEST FIRST NAME",
         "city": "TEST CITY",
         "email": "test.test@example.com",
         "cell": "(420)-255-3320"
-    }```
+    }
 
 Import the request template `request-templat/RandomUser.postman_collection.json` in Postman or similar to test the endpoints

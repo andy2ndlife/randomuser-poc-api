@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
 /* A user by FirstName */
 router.get('/firstname/:firstname', async (req, res) => {
     await user.getUser(req.params.firstname)
-    .then(user => res.json(user))
+    .then(user => res.status(200).json(user))
     .catch(err => {
         if (err.status) {
             res.status(err.status).json({ message: err.message })
